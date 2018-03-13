@@ -1,6 +1,6 @@
 package com.bzsoft.mservice.model;
 
-
+//TODO: envolver en data los datos
 public class QueryMetadata {
 
     private final String[] columns;
