@@ -14,9 +14,17 @@ public class Main {
         // empty
     }
 
-    private final void configureRoutes(final int port) {
+    private final void configure(final int port) {
         Gson gson = new Gson();
+        
         port(port);
+        
+        int maxThreads = 8;
+        int minThreads = 2;
+        int timeOutMillis = 30000;
+        threadPool(maxThreads, minThreads, timeOutMillis);        
+        
+        staticFiles.location("/public");
 		after((req, res) -> {
 			res.header("Content-Encoding", "gzip");
 		});
@@ -25,11 +33,13 @@ public class Main {
         //raw
         //get("/hello", (request, response) -> new MyMessage("Hello World"), gson::toJson);
         //https://sites.google.com/site/gson/streaming
+        
+        //filters: elements, list or list of tuples
     }
 
     public static void main(final String[] args) throws Exception {
         LOGGER.info("Starting ...");
         final Main m = new Main();
-        m.configureRoutes(8080);
+        m.configure(8080);
     }
 }
