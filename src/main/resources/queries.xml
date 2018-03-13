@@ -1,0 +1,13 @@
+
+<queries>
+    <query name="" datasource="">
+        <script><![CDATA[
+        
+        ]]></script>        
+    </query>
+    <query id="" datasource="">
+        <script><![CDATA[
+        
+        ]]></script>
+    </query>
+</queries>
