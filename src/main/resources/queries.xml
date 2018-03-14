@@ -1,11 +1,31 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE queries [
+      <!ELEMENT queries (query+)>
+      <!ELEMENT query (filters, script)> 
+      <!ATTLIST query 
+      	name    	  CDATA   #REQUIRED
+      	datasource    CDATA   #REQUIRED>
+      <!ELEMENT filters (filter+)>
+      <!ELEMENT filter EMPTY>
+      <!ATTLIST filter 
+      	name 		  CDATA #REQUIRED
+      	type      (item|list|tuple|tuplelist) #REQUIRED
+      	mandatory (true|false) "true">      	
+      <!ELEMENT script (#PCDATA)> 
+]>
 <queries>
     <query name="" datasource="">
+    	<filters>
+    		<filter name="" type="item"/>
+    	</filters>
         <script><![CDATA[
         
         ]]></script>        
     </query>
-    <query id="" datasource="">
+    <query name="" datasource="">
+    	<filters>
+    		<filter name="" type="item" mandatory="true"/>
+    	</filters>
         <script><![CDATA[
         
         ]]></script>

@@ -10,7 +10,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
-import com.bzsoft.mservice.model.Query;
+import com.bzsoft.mservice.model.QueryDefinition;
 import com.bzsoft.mservice.util.Parser;
 
 
@@ -23,7 +23,7 @@ public class ParserImpl implements Parser{
     }
 
     
-    public Map<String, Query> parse(InputStream is) throws Exception{
+    public Map<String, QueryDefinition> parse(InputStream is) throws Exception{
         DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dFactory.newDocumentBuilder();
         Document doc = dBuilder.parse(is);

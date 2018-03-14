@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import com.google.gson.Gson;
 
 
-public class Main {
+public final class Main {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
