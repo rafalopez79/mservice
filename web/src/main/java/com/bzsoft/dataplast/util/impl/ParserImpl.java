@@ -1,4 +1,4 @@
-package com.bzsoft.mservice.util.impl;
+package com.bzsoft.dataplast.util.impl;
 
 import java.io.InputStream;
 import java.util.Collection;
@@ -10,8 +10,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
-import com.bzsoft.mservice.model.QueryDefinition;
-import com.bzsoft.mservice.util.Parser;
+import com.bzsoft.dataplast.model.QueryDefinition;
+import com.bzsoft.dataplast.util.Parser;
 
 
 public class ParserImpl implements Parser{

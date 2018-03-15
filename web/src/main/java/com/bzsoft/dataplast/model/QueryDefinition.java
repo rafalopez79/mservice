@@ -1,4 +1,4 @@
-package com.bzsoft.mservice.model;
+package com.bzsoft.dataplast.model;
 
 
 public final class QueryDefinition {

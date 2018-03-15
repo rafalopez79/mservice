@@ -1,9 +1,9 @@
-package com.bzsoft.mservice.util;
+package com.bzsoft.dataplast.util;
 
 import java.io.InputStream;
 import java.util.Map;
 
-import com.bzsoft.mservice.model.QueryDefinition;
+import com.bzsoft.dataplast.model.QueryDefinition;
 
 public interface Parser {
 
